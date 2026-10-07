@@ -156,7 +156,7 @@ let fs=Number(localStorage.getItem('algrano-font')||17);document.documentElement
 
 
 const savedSetting=(key,fallback)=>localStorage.getItem(key)??fallback;
-function setTogglePreference(id,key,className,defaultValue){const box=$('#'+id);const enabled=savedSetting(key,defaultValue)==='true';box.checked=enabled;body.classList.toggle(className,enabled);box.onchange=()=>{localStorage.setItem(key,String(box.checked));body.classList.toggle(className,box.checked);if(id==='show-translations')renderList()}}
+function setTogglePreference(id,key,className,defaultValue){const box=$('#'+id);const enabled=savedSetting(key,defaultValue)==='true';const classEnabled=id==='show-translations'?!enabled:enabled;box.checked=enabled;body.classList.toggle(className,classEnabled);box.onchange=()=>{localStorage.setItem(key,String(box.checked));body.classList.toggle(className,id==='show-translations'?!box.checked:box.checked);if(id==='show-translations')renderList()}}
 setTogglePreference('show-translations','algrano-show-translations','translation-hidden','true');
 setTogglePreference('show-meaning','algrano-show-meaning','show-spanish-meaning','false');
 setTogglePreference('high-contrast','algrano-high-contrast','high-contrast','false');
