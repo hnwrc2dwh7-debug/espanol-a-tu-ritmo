@@ -4,7 +4,7 @@ Una web de práctica del español con más de 400 verbos en español. Es estáti
 
 ## Incluye
 
-- Más de 400 fichas de conjugación en presente, pretérito e imperfecto: verbos regulares, irregulares, con cambio vocálico y pronominales.
+- 454 verbos con su traducción francesa y conjugaciones en presente, pretérito e imperfecto; filtros por tipo, cambios vocálicos y verbos pronominales.
 - Verbos pronominales como *acostarse*, *sentarse*, *llamarse*, *lavarse*, *vestirse* y *ducharse*.
 - Reglas resumidas para los cambios e→ie, i→ie, o→ue, e→i y u→ue.
 - Expresiones cotidianas y tres juegos escritos, sin audio.
